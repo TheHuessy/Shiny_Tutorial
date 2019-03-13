@@ -1,0 +1,61 @@
+-Server and Ui
+-Sidepanel
+-MainPanel
+-DT/table outputs
+-ggplot integration
+-plotly
+-ShinyDashboard (copy paste the vanilla one into sd)
+
+
+Don't worry about tabs just yet, have them in the show app, but don't worry about explaining it just yet
+
+
+## Run example app
+
+## Explain where the Ui elements are 
+### Sidebar
+### Main Panel
+### Title
+
+## Explain where/what server elements are
+### The code that drives the histogram
+
+## Have them add a textoutput()/renderPrint() to show the live/reactive value of input$bins
+
+## Add read.csv(our games data) to the top of the Ui file below library
+### Mention that anything that needs to be calculated within the Ui file, needs to be expressed in the Ui file
+### You can always run R within these files. The output need to be shiny specific, but background processes are ok, they just take resources.
+
+## Add selectInput() to sidebar and add plotOutput('Games') to top of main panel
+
+## Show the F1 options for selectinput(), fill out inputid, label, and multiple
+### Then mention the choices option, and talk about how you can just put in values if you want, but that requires you to rewrite the options each time you load a new dataset
+
+## Create the 'plat' variable in the Ui file
+### Make sure that setwd() is done to avoid any errors [maybe wait until the error happens]
+### Explain the 'www' folder
+
+## Pass the plat variable to choices and make sure that 'multiple' is turned off
+### After running app and showing what multiple does
+
+## Head over to server file and create another renderText, like with bins but for platform choice
+### Shows them once again what the argument being passed is going to look like
+### Allows you to make sure that things are updating
+
+## Get rid of old graph
+
+## Create data extract in server file above 'output statements'
+
+## Create factor out of score_phrase
+
+## Generate reactive subset dataset
+### Explain why it needs to be reactive and that reactive variables act like functions
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+## Markdown is probably the best
+
+It's a bit more R oriented, what with Rmarkdown and all, but this function could also be used to pipe in the .md file from a github repo or where ever.
+
+```{r, echo=TRUE}
+v <- "Code passed from R to Markdown and then from Markdown into shiny"
+print(v)
+
+```
+
+
