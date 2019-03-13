@@ -17,7 +17,7 @@ shinyServer(function(input, output) {
                                                        "Amazing",
                                                        "Masterpiece"), ordered = TRUE)
     dpick <- reactive({d[which(d$platform == input$Platforms),]})
-
+    
     output$input_bins <- renderText({
         c <- input$bins
         c
@@ -27,8 +27,7 @@ shinyServer(function(input, output) {
         b
     })
     output$Games_T <- DT::renderDataTable(DT::datatable({
-        dpick() %>% 
-            gather
+        dpick()
         
     }))
      output$Games <- renderPlot({
